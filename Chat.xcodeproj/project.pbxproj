@@ -15,6 +15,7 @@
 		35408C191A40476E00776C6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35408C171A40476E00776C6A /* LaunchScreen.xib */; };
 		35408C251A40476E00776C6A /* ChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C241A40476E00776C6A /* ChatTests.m */; };
 		35408C301A41948100776C6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C2F1A41948100776C6A /* MainViewController.m */; };
+		35408C331A41A30C00776C6A /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C321A41A30C00776C6A /* ContactsTableViewController.m */; };
 		57BCB61F7A4BAD0016802363 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FEB5EE74C2C8852598F755 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		35408C241A40476E00776C6A /* ChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTests.m; sourceTree = "<group>"; };
 		35408C2E1A41948100776C6A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		35408C2F1A41948100776C6A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		35408C311A41A30C00776C6A /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		35408C321A41A30C00776C6A /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 		49FEB5EE74C2C8852598F755 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F617F2BF74DBABE3B4404A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCFD3A291DB1AA40A8DD06EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				35408C081A40476E00776C6A /* Supporting Files */,
 				35408C2E1A41948100776C6A /* MainViewController.h */,
 				35408C2F1A41948100776C6A /* MainViewController.m */,
+				35408C311A41A30C00776C6A /* ContactsTableViewController.h */,
+				35408C321A41A30C00776C6A /* ContactsTableViewController.m */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				35408C111A40476E00776C6A /* JoininViewController.m in Sources */,
 				35408C0E1A40476E00776C6A /* AppDelegate.m in Sources */,
+				35408C331A41A30C00776C6A /* ContactsTableViewController.m in Sources */,
 				35408C0B1A40476E00776C6A /* main.m in Sources */,
 				35408C301A41948100776C6A /* MainViewController.m in Sources */,
 			);
