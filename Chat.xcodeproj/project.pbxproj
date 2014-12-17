@@ -16,6 +16,9 @@
 		35408C251A40476E00776C6A /* ChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C241A40476E00776C6A /* ChatTests.m */; };
 		35408C301A41948100776C6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C2F1A41948100776C6A /* MainViewController.m */; };
 		35408C331A41A30C00776C6A /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C321A41A30C00776C6A /* ContactsTableViewController.m */; };
+		35408C381A41ABE100776C6A /* placeholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 35408C371A41ABE100776C6A /* placeholder.jpeg */; };
+		35408C3D1A41B15900776C6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35408C3C1A41B15900776C6A /* QuartzCore.framework */; };
+		35408C401A41B36700776C6A /* MomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35408C3F1A41B36700776C6A /* MomentsViewController.m */; };
 		57BCB61F7A4BAD0016802363 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FEB5EE74C2C8852598F755 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,10 @@
 		35408C2F1A41948100776C6A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		35408C311A41A30C00776C6A /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
 		35408C321A41A30C00776C6A /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		35408C371A41ABE100776C6A /* placeholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpeg; sourceTree = "<group>"; };
+		35408C3C1A41B15900776C6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		35408C3E1A41B36700776C6A /* MomentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentsViewController.h; sourceTree = "<group>"; };
+		35408C3F1A41B36700776C6A /* MomentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentsViewController.m; sourceTree = "<group>"; };
 		49FEB5EE74C2C8852598F755 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F617F2BF74DBABE3B4404A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCFD3A291DB1AA40A8DD06EE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35408C3D1A41B15900776C6A /* QuartzCore.framework in Frameworks */,
 				57BCB61F7A4BAD0016802363 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +82,7 @@
 		35408BFC1A40476E00776C6A = {
 			isa = PBXGroup;
 			children = (
+				35408C361A41ABE100776C6A /* images */,
 				35408C071A40476E00776C6A /* Chat */,
 				35408C211A40476E00776C6A /* ChatTests */,
 				35408C061A40476E00776C6A /* Products */,
@@ -94,6 +103,8 @@
 		35408C071A40476E00776C6A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				35408C3E1A41B36700776C6A /* MomentsViewController.h */,
+				35408C3F1A41B36700776C6A /* MomentsViewController.m */,
 				35408C0C1A40476E00776C6A /* AppDelegate.h */,
 				35408C0D1A40476E00776C6A /* AppDelegate.m */,
 				35408C0F1A40476E00776C6A /* JoininViewController.h */,
@@ -136,6 +147,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35408C361A41ABE100776C6A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				35408C371A41ABE100776C6A /* placeholder.jpeg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		4AC4620EE5220335A4B6B652 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +167,7 @@
 		E30E3A64AE7E7E666AA4F948 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35408C3C1A41B15900776C6A /* QuartzCore.framework */,
 				49FEB5EE74C2C8852598F755 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -238,6 +258,7 @@
 				35408C141A40476E00776C6A /* Main.storyboard in Resources */,
 				35408C191A40476E00776C6A /* LaunchScreen.xib in Resources */,
 				35408C161A40476E00776C6A /* Images.xcassets in Resources */,
+				35408C381A41ABE100776C6A /* placeholder.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35408C401A41B36700776C6A /* MomentsViewController.m in Sources */,
 				35408C111A40476E00776C6A /* JoininViewController.m in Sources */,
 				35408C0E1A40476E00776C6A /* AppDelegate.m in Sources */,
 				35408C331A41A30C00776C6A /* ContactsTableViewController.m in Sources */,

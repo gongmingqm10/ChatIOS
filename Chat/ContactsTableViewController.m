@@ -8,6 +8,8 @@
 
 #import "ContactsTableViewController.h"
 #import "AFHTTPRequestOperationManager.h"
+#import "UIImageView+WebCache.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ContactsTableViewController ()
 
@@ -25,16 +27,20 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
-    [self loadData];
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self refresh:nil];
 }
 
-- (void)loadData {
+- (void)refresh:(UIRefreshControl *)refresh {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"http://192.168.43.69:3000/users.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-         self.contacts = responseObject;
+        self.contacts = responseObject;
         [self.tableView reloadData];
+        if (refresh != nil && refresh.refreshing) {
+            [refresh endRefreshing];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
@@ -70,6 +76,8 @@
     NSDictionary *contact = [self.contacts objectAtIndex:indexPath.row];
     cell.textLabel.text = [contact objectForKey:@"name"];
     cell.detailTextLabel.text = @"Hello";
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:[contact objectForKey:@"avator_url"]]
+                      placeholderImage: [UIImage imageNamed:@"placeholder.jpeg"]];
 
     return cell;
 }
